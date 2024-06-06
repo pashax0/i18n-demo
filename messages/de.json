@@ -1,5 +1,11 @@
 {
   "Index": {
-    "title": "German!"
+    "title": "German!",
+    "server":  "German server",
+    "client":  "German client",
+    "service on server":  "German service on server",
+    "service on client":  "German service on client",
+    "metadata":  "German metadata",
+    "constant": "German constant"
   }
 }

@@ -8,6 +8,7 @@ export default function Index() {
       <div>
         <Header />
         <h1>{t('title')}</h1>
+          <p>{t('server')}</p>
       </div>
   );
 }

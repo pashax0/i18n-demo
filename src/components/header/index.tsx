@@ -3,8 +3,10 @@
 import {getCookie, setCookie} from "@/app/actions";
 import {ChangeEvent, useEffect, useState} from "react";
 import {SelectElement} from "@formatjs/icu-messageformat-parser";
+import {useTranslations} from "next-intl";
 
 const Header = () => {
+    const t = useTranslations('Index');
     const [value, setValue] = useState('');
 
     useEffect(() => {
@@ -22,7 +24,7 @@ const Header = () => {
     }
 
     return <div>
-        <label htmlFor="lang-select">Choose a lang:</label>
+        <label htmlFor="lang-select">{t('client')}</label>
 
         <select name="pets" id="lang-select" onChange={handleChange} value={value}>
             <option value="en">EN</option>
