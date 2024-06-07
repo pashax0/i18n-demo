@@ -23,6 +23,7 @@ export default function Index() {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
+    // NOT: locale has no effect, but required
     const t = await getTranslations({locale: 'de', namespace: 'Index'});
 
     return {

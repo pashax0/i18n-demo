@@ -15,7 +15,6 @@ export default function Index({ params }: Props) {
         <div>
             <Header />
             <h1>{t('title')}</h1>
-            {/*<p>{t('Second page')}</p>*/}
         </div>
     );
 }
