@@ -1,10 +1,9 @@
 'use client';
 
-import {getCookie, setCookie} from "@/app/actions";
+import {getCookie, setCookie} from "@/services/actions";
 import {ChangeEvent, useEffect, useState} from "react";
 import {useTranslations} from "next-intl";
-import {getServiceValue} from "@/components/header/helper";
-import {SOME_CONSTANT} from "@/constants";
+import {getServiceValue} from "@/components/header/helper"
 import Link from "next/link";
 
 const Header = () => {

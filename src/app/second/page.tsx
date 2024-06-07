@@ -21,7 +21,7 @@ export default function Index({ params }: Props) {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-    const t = await getTranslations({ namespace: 'Index'});
+    const t = await getTranslations({ locale: 'de', namespace: 'Index'});
 
     return {
         title: t('metadata second page')

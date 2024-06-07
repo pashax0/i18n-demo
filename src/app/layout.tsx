@@ -1,3 +1,6 @@
+// NOTE: Fix build cookie error
+export const dynamic = 'force-dynamic'
+
 import {NextIntlClientProvider} from 'next-intl';
 import {getLocale, getMessages} from 'next-intl/server';
 

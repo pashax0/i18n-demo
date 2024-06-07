@@ -15,6 +15,7 @@ export default function Index() {
           <p>{t('server')}</p>
           <div>
               <h5>{getServiceValue()}</h5>
+              {/* NOTE: This not works */}
               <p>{SOME_CONSTANT.value}</p>
           </div>
       </div>
@@ -22,7 +23,7 @@ export default function Index() {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-    const t = await getTranslations({locale: '', namespace: 'Index'});
+    const t = await getTranslations({locale: 'de', namespace: 'Index'});
 
     return {
         title: t('metadata first page')

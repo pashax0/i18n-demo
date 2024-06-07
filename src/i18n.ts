@@ -1,13 +1,21 @@
 import {getRequestConfig} from 'next-intl/server';
 import {cookies} from "next/headers";
+import {getCookie} from "@/services/actions";
 
 export default getRequestConfig(async () => {
-    // Provide a static locale, fetch a user setting,
-    // read from `cookies()`, `headers()`, etc.
-    const locale = cookies().get('lang')?.value || 'en';
+    try {
+        const cookieStore = cookies();
+        const locale = cookieStore.has('lang') ? cookieStore.get('lang')?.value : 'en';
 
-    return {
-        locale,
-        messages: (await import(`../messages/${locale}.json`)).default
-    };
+        return {
+            locale,
+            messages: (await import(`../messages/${locale}.json`)).default
+        };
+    } catch (error) {
+        console.error('i18n error:', error);
+        return {
+            locale: 'en',
+            messages: (await import(`../messages/en.json`)).default
+        };
+    }
 });
