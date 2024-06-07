@@ -5,7 +5,8 @@
     "client":  "Russian client",
     "service on server":  "Russian service on server",
     "service on client":  "Russian service on client",
-    "metadata":  "Russian metadata",
+    "metadata first page":  "Russian metadata first page",
+    "metadata second page":  "Russian metadata second page",
     "constant": "Russian constant"
   }
 }

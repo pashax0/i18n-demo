@@ -5,7 +5,8 @@
     "client":  "English client",
     "service on server":  "English service on server",
     "service on client":  "English service on client",
-    "metadata":  "English metadata",
+    "metadata first page":  "English metadata first page",
+    "metadata second page":  "English metadata second page",
     "constant": "English constant"
   }
 }

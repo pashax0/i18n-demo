@@ -5,7 +5,8 @@
     "client":  "German client",
     "service on server":  "German service on server",
     "service on client":  "German service on client",
-    "metadata":  "German metadata",
+    "metadata first page":  "German metadata first page",
+    "metadata second page":  "German metadata second page",
     "constant": "German constant"
   }
 }
