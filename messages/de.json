@@ -7,6 +7,7 @@
     "service on client":  "German service on client",
     "metadata first page":  "German metadata first page",
     "metadata second page":  "German metadata second page",
-    "constant": "German constant"
+    "constant": "German constant",
+    "hook constant": "German hook constant"
   }
 }
